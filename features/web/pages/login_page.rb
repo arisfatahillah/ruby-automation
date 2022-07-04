@@ -7,6 +7,7 @@ class LoginPage < SitePrism::Page
     element :password_field, :xpath, "//input[@placeholder='Kata Sandi Anda']"
     element :login_menu, :xpath, "//a[@href='https://evermos.com/login']"
     element :masuk_button, :xpath, '//*[contains(text(), "Masuk")]'
+    element :tautan_toko, :xpath, '//*[contains(text(), "Salin Tautan Toko")]'
       
     def input_phonenumber(phone_number)
       wait_until_phonenumber_field_visible(wait: 5)
@@ -28,5 +29,10 @@ class LoginPage < SitePrism::Page
       within ".elementor-nav-menu" do
         click_link("Masuk", :match => :first)
       end
+    end
+
+    def click_tautan_toko
+      wait_until_tautan_toko_visible(wait: 5)
+      tautan_toko.click
     end
 end

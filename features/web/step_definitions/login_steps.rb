@@ -18,6 +18,11 @@
     click_link(link_page)
     sleep 1
   end
+
+  And(/^user visit url "([^"]*)" on the page/) do |link_page|
+    visit(link_page)
+    sleep 1
+  end
   
   Then(/^validate shop url on new tab/) do
     sleep 5
@@ -26,4 +31,15 @@
   
     expect(current_url).to eq('https://berikhtiar.com/huhuhuh.ce6')
   end
+
+  And(/^validate user see text "([^"]*)" on the page/) do |text_view|
+    sleep 1
+    expect(page).to have_content(text_view)
+  end
+
+  When(/^user can click tautan toko/) do
+    @browser.click_tautan_toko
+    sleep 1
+  end
+
   
