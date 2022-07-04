@@ -1,0 +1,13 @@
+[caps]
+    udid = "21684a81"
+    deviceName = "Realme XT"
+    platformName = 'Android'
+    platformVersion =  "11" 
+    app = "/home/arise/Downloads/Evermos.apk"
+    appPackage = "evermos.evermos.com.evermos"
+    newCommandTimeout = "3600"
+    automationName = "uiautomator2"
+    fullReset = false
+    chromedriverExecutable = "/home/arise/Documents/aplikasi/chromedriver102/chromedriver"
+[appium_lib]    
+    server_url = "http://0.0.0.0:4729/wd/hub"
