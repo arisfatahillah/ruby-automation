@@ -1,0 +1,9 @@
+android: features/android/scenario
+    -r features/android/page_object
+    -r features/android/helper
+    -r features/android/step_definitions
+web: features/web/scenario
+    -r features/web/pages
+    -r features/web/support
+    -r features/web/steps_definitions
+    -r features/web/helper
