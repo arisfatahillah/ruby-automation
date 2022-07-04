@@ -10,14 +10,14 @@ Software Automation Testing Web using selenium and Android Apps using appium
 
 ## Read This Before you start!
 1. On Android section please change device capability (device name) on folder features/android/helper/env.rb (change based on your device)
-2. Change your login account on features/step_definitions/login_steps.rb. change variable @username_user and @password_user
+2. Change your login account on features/scenario/copy_link_shop.feature change variable input phone number and password steps
 
 ## Running command
    Profile configuration : config/cucumber.yml
 
 | Platform            | Command                                                |
 |---------------------|------------------------------------------------------- |
-| **Android Apps**    | `bundle exec cucumber -p android --tag @home-apps`     |
+| **Android Apps**    | `bundle exec cucumber -p android --tag @homepage`     |
 | **Web**             | `bundle exec cucumber -p web --tag @login`             |
 
 ## Folder Structure

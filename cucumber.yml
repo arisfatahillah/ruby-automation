@@ -1,4 +1,4 @@
-android: features/android/scenario
+android: features/android/scenarios
     -r features/android/page_object
     -r features/android/helper
     -r features/android/step_definitions

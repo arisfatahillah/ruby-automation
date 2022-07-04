@@ -11,5 +11,4 @@ Feature: Evermos - Homepage
     And validate text "Yuk, ikuti panduan berjualan sebelum mulai berikhtiar." exist on page
     And user click button name "Nanti Saja"
     When user click text view "Akun Saya"
-    And user click button name "Lihat Toko Saya"
-    Then user validate text "Brand Tersedia" exist on webview
+    Then user click button name "Lihat Toko Saya"

@@ -1,5 +1,6 @@
   When(/^user click button name "([^"]*)"$/) do |button_name|
     click_widget_button(button_name)
+    sleep 2
   end
     
   When(/^user click text view "([^"]*)"$/) do |text_name|
